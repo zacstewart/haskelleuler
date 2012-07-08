@@ -1,2 +1,2 @@
-fizzBuzzSum n = sum [if x `mod` 3 == 0 || x `mod` 5 == 0 then x else 0 | x <- [1..n]]
+fizzBuzzSum n = sum [x | x <- [1..n], mod x 3 == 0 || mod x 5 == 0]
 main = print (fizzBuzzSum 1000)
